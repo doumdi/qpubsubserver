@@ -25,4 +25,7 @@ SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -Wall")
 #need to git submodule init first.
 add_subdirectory(modules)
 
+#Next, let's generate messages
+add_subdirectory(messages)
+
 add_subdirectory(src)
