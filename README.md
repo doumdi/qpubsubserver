@@ -3,14 +3,14 @@ Publish-Subscribe Server using Qt
 
 * Prototyping with Qt 5.8
 * Using MQTT protocol
-** https://github.com/emqtt/qmqtt
-** http://mqtt.org/
+  * https://github.com/emqtt/qmqtt
+  * http://mqtt.org/
 * Using Google Protocol Buffers
-** https://github.com/google/protobuf
+  * https://github.com/google/protobuf
 
 # Author(s)
 
-@doumdi
+[@doumdi](https://github.com/doumdi)
 
 # Contributor(s)
 
