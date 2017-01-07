@@ -29,3 +29,5 @@ add_subdirectory(modules)
 add_subdirectory(messages)
 
 add_subdirectory(src)
+
+add_custom_target(readme SOURCES README.md)

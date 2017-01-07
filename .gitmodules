@@ -1,3 +1,6 @@
 [submodule "modules/protobuf"]
 	path = modules/protobuf
 	url = https://github.com/google/protobuf.git
+[submodule "modules/qmqtt"]
+	path = modules/qmqtt
+	url = https://github.com/emqtt/qmqtt.git
