@@ -31,3 +31,8 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR}
 add_library(qmqtt SHARED ${qmqtt_headers} ${qmqtt_srcs} ${qmqtt_moc_srcs})
 #Handle Qt dependencies
 qt5_use_modules(qmqtt Core Network)
+
+#cached variables
+set(QMQTT_INCLUDES ${CMAKE_CURRENT_SOURCE_DIR}/qmqtt/src/mqtt CACHE INTERNAL "doc string")
+set(QMQTT_LIBS "qmqtt" CACHE INTERNAL "doc string")
+

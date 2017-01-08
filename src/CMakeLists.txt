@@ -1,6 +1,12 @@
+
+
 find_package(Qt5Core REQUIRED)
 find_package(Qt5Network REQUIRED)
 find_package(Qt5NetworkAuth REQUIRED)
+
+
+add_subdirectory(qmqtt_server)
+
 
 set(qpubsubserver_srcs
     main.cpp
@@ -25,6 +31,8 @@ QT5_WRAP_CPP(moc_srcs_qpubsubserver ${qpubsubserver_headers})
 #Add includes
 include_directories(
     ${MESSAGES_INCLUDES}
+    ${QMQTT_INCLUDES}
+    ${CMAKE_CURRENT_SOURCE_DIR}/qmqtt_server
 )
 
 add_executable(qpubsubserver
@@ -37,4 +45,4 @@ add_executable(qpubsubserver
 #Qt dependencies
 qt5_use_modules(qpubsubserver Core Network NetworkAuth)
 #Additional libraries
-target_link_libraries(qpubsubserver ${MESSAGES_LIBS})
+target_link_libraries(qpubsubserver qmqtt_server ${MESSAGES_LIBS})

@@ -13,7 +13,7 @@ int main(int argc, char* argv[])
 {
     GOOGLE_PROTOBUF_VERIFY_VERSION;
     qDebug("Starting...");
-    QCoreApplication app(argc,argv);
+    ServerApp app(argc,argv);
 
 
     app.exec();
